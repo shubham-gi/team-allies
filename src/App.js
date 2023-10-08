@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Studentdesk from "./Components/Studentdesk";
 import Signin from "./Components/Signin";
+import Developers from "./Components/Developers";
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [user,setUser]=useState({name:"Please Login to get more details"})
@@ -21,6 +22,12 @@ const App = () => {
           path="/studentdesk"
           element={
             <Studentdesk loggedIn={loggedIn} setLoggedIn={setLoggedIn} user={user}/>
+          }
+        />
+        <Route
+          path="/developers"
+          element={
+            <Developers />
           }
         />
         <Route

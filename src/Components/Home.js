@@ -3,7 +3,7 @@ import line from '../images/line.svg'
 import pointSpace from '../images/points-space.svg'
 import planet from '../images/planet.svg'
 // import grasses from '../images/grasses.png'
-import bacha1 from '../images/bacha1.png'
+import bacha1 from '../images/boyAndGirl.png'
 const Home = (props) => {
   console.log(props.user)
   return (
