@@ -22,6 +22,7 @@ const Navbar = (props) => {
   };
   const handleSignOut=()=>{
     props.setLoggedIn(false)
+    props.setUser({name:"Please Login to get more details"})
   }
   navLink.forEach((n) => n.addEventListener("click", linkAction));
   // gsap.from(".home_points", 1.5, { opacity: 0, y: -300, delay: 0.2 });

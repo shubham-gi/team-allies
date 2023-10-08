@@ -2,18 +2,21 @@ import React from "react";
 import line from '../images/line.svg'
 import pointSpace from '../images/points-space.svg'
 import planet from '../images/planet.svg'
-import grasses from '../images/grasses.png'
+// import grasses from '../images/grasses.png'
 import bacha1 from '../images/bacha1.png'
-const Home = () => {
+const Home = (props) => {
+  console.log(props.user)
   return (
     <main className="main">
       <section className="home">
+        
         <div className="home_container container">
           <div className="home_content">
+          {!props.loggedIn?<h1>{props.user.name}</h1>:""}
             {/* <h3 className="home_sub">STUDENT WEBSITE</h3> */}
             <h1 className="home_title">
               <span>
-                Hello Engineers
+                Hello {props.loggedIn?props.user.name:"Engineers"}
                 <br />
                
               </span>
