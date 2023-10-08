@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Studentdesk from "./Components/Studentdesk";
 import Signin from "./Components/Signin";
 import Developers from "./Components/Developers";
+import Community from "./Components/Community";
 const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [user,setUser]=useState({name:"Please Login to get more details"})
@@ -33,6 +34,10 @@ const App = () => {
         <Route
           path="/signin"
           element={<Signin loggedIn={loggedIn} setLoggedIn={setLoggedIn} user={user} setUser={setUser}/>}
+        ></Route>
+        <Route
+          path="/community"
+          element={<Community loggedIn={loggedIn} setLoggedIn={setLoggedIn} user={user} setUser={setUser}/>}
         ></Route>
       </Routes>
     </>
