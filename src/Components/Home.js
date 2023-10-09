@@ -31,14 +31,14 @@ const Home = (props) => {
             </Link>
           </div>
           <div className="home_images">
-            <img src={pointSpace} alt="image" className="home_points" />
-            <img src={planet} alt="image" className="home_planet-2" />
-            <img src={planet} alt="image" className="home_planet-1" />
-            <img src={bacha1} alt="image" className="home_rocket" />
+            <img src={pointSpace} alt="not available" className="home_points" />
+            <img src={planet} alt="not available" className="home_planet-2" />
+            <img src={planet} alt="not available" className="home_planet-1" />
+            <img src={bacha1} alt="not available" className="home_rocket" />
           </div>
         </div>
-        {/* <img src={grasses} alt="image" className="home_cloud-1" />
-        <img src={grasses} alt="image" className="home_cloud-2" /> */}
+        {/* <img src={grasses} alt="not available" className="home_cloud-1" />
+        <img src={grasses} alt="not available" className="home_cloud-2" /> */}
       </section>
     </main>
   );
