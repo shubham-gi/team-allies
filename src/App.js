@@ -22,7 +22,7 @@ const App = () => {
         <Route
           path="/studentdesk"
           element={
-            <Studentdesk loggedIn={loggedIn} setLoggedIn={setLoggedIn} user={user}/>
+            <Studentdesk loggedIn={loggedIn}  setLoggedIn={setLoggedIn} user={user}/>
           }
         />
         <Route

@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+// import { Routes, Route } from "react-router-dom";
 // import StudentHeader from "./Student/StudentHeader";
 import profile1 from "./Student/images/profile-1.png";
 import profile2 from "./Student/images/profile-2.jpeg";
@@ -8,7 +8,7 @@ import profile4 from "./Student/images/profile-4.jpg";
 
 // import   './Student/styles.css'
 import "./Student/index.css";
-const Studentdesk = () => {
+const Studentdesk = (props) => {
   return (
     <>
       <div className="container1">
@@ -20,7 +20,7 @@ const Studentdesk = () => {
               </div>
               <div className="info">
                 <p>
-                  Hey, <b>Khushi</b>{" "}
+                  Hey, <b>{props.user.name}</b>{" "}
                 </p>
                 <small className="text-muted">12102030</small>
               </div>

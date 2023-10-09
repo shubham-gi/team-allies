@@ -4,6 +4,7 @@ import pointSpace from '../images/points-space.svg'
 import planet from '../images/planet.svg'
 // import grasses from '../images/grasses.png'
 import bacha1 from '../images/boyAndGirl.png'
+import { Link } from "react-router-dom";
 const Home = (props) => {
   console.log(props.user)
   return (
@@ -25,9 +26,9 @@ const Home = (props) => {
             <p className="home_description">
               Start your journey as a beginner and enhance your overall growth and personality.
             </p>
-            <a href="#" className="home_button">
+            <Link to={props.loggedIn?"/studentDesk":"/signin"} className="home_button">
               Let's Start
-            </a>
+            </Link>
           </div>
           <div className="home_images">
             <img src={pointSpace} alt="image" className="home_points" />
